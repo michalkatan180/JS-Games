@@ -1,0 +1,68 @@
+﻿* {
+    vertical-align: top;
+
+}
+body{
+    background-image: url('../IMG/homeIMG/שער משחקים.jpg');
+    background-repeat: no-repeat;
+    background-size: 99vw 99vh;
+}
+.game {
+    top: 49vh;
+    display: inline-block;
+    width: 26vw;
+    height: 32vh;
+    background-color: white;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-size: 26vw 32vh;
+    box-shadow: inset 1px 1px 10px 0px gray;
+    border-radius: 5%;
+    position:absolute;
+}
+
+.game:hover {
+    background-size: 28vw 34vh;
+    width:28vw;
+    height:34vh;
+     top:48vh; 
+}
+
+
+#windows {
+    background-image: url('../IMG/homeIMG/בנין.png');
+   right:7vw;
+}
+#windows:hover{
+    right:6vw;
+}
+
+#balls {
+    background-image: url('../IMG/תמונות (13).jpg');
+   right:37vw;
+}
+#balls:hover {
+    right: 36vw;
+}
+
+#fruits {
+    background-image: url('../IMG/Fruit_Ninja_Wood_חתוך.jpg');
+    right:67vw;
+}
+#fruits:hover {
+    right: 66vw;
+}
+
+.return {
+    width: 4vw;
+    height: 8vh;
+    background-image: url('../IMG/סימנים/Home.png');
+    background-repeat: no-repeat;
+    background-size: 4vw;
+    position: absolute;
+    z-index: 2;
+    right: 3vw;
+    bottom: 3vh;
+    cursor: pointer;
+}
+

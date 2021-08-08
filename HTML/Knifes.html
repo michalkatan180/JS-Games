@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        .k {
+            animation-duration: 2s;
+            animation-fill-mode: backwards;
+            animation-timing-function: linear;
+            animation-iteration-count: 100;
+            width: 10vw;
+            height: 36vh;
+            position: absolute;
+            bottom: 5vh;
+            display: inline-block;
+            cursor: pointer;
+        }
+        body {
+            background-repeat: no-repeat;
+            background-size: 100vw 100vh;
+            overflow: hidden;
+            background-image: url("../IMG/רקע בלי נינג'ה2.jpg");
+        }
+        *{vertical-align:top;}
+            .k:hover {
+                animation-name: k;
+            }
+
+        @keyframes k {
+            0% {
+                width: 10vw;
+            }
+
+            50% {
+                width: 13vw;
+            }
+
+            100% {
+                width: 10vw;
+            }
+        }
+
+    </style>
+</head>
+<body>
+ 
+    <img class="k" onclick="x1()" style="left:1vw" src="../IMG/knifes/1.gif" />
+    <img class="k" onclick="x2()" style="left:13vw" src="../IMG/knifes/2.gif" />
+    <img class="k" onclick="x3()" style="left:25vw" src="../IMG/knifes/3.gif" />
+    <img class="k" onclick="x4()" style="left:37vw" src="../IMG/knifes/4.gif" />
+    <img class="k" onclick="x5()" style="left:49vw" src="../IMG/knifes/5.gif" />
+    <img class="k" onclick="x6()" style="left:61vw" src="../IMG/knifes/6.gif" />
+    <script>
+        function x1() {
+            localStorage.setItem("knife_img", "url('../IMG/knifes/1.gif')");
+            window.location = "Fruits.html";
+        } function x2() {
+            localStorage.setItem("knife_img","url('../IMG/knifes/2.gif')");
+            window.location = "Fruits.html";
+        } function x3() {
+            localStorage.setItem("knife_img", "url('../IMG/knifes/3.gif')");
+            window.location = "Fruits.html";
+        } function x4() {
+            localStorage.setItem("knife_img", "url('../IMG/knifes/4.gif')");
+            window.location = "Fruits.html";
+        } function x5() {
+            localStorage.setItem("knife_img", "url('../IMG/knifes/5.gif')");
+            window.location = "Fruits.html";
+        } function x6() {
+            localStorage.setItem("knife_img", "url('../IMG/knifes/6.gif')");
+            window.location = "Fruits.html";
+        }
+    </script>
+</body>
+</html>

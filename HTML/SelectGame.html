@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>בחירת משחק</title>
+
+    <style>
+    </style>
+    <link href="../CSS/SelectGame.css" rel="stylesheet" />
+</head>
+<body>
+    <!--בס"ד-->
+    <center>
+        <div class="game" id="windows" onclick="Game1()"></div>
+        <div class="game" id="balls" onclick="Game2()"></div>
+        <div class="game" id="fruits" onclick="Game3()"></div>
+        <a class="return" href="HomePage.html"></a>
+    </center>
+    <script>
+        function Game1() {
+            window.location = "SelectWindowsLevel.html";
+        }
+        function Game2() {
+            window.location = "GameBalls.html";
+        }
+        function Game3() {
+            window.location = "Fruits.html";
+        }
+    </script>
+</body>
+</html>

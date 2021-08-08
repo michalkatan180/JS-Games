@@ -1,0 +1,126 @@
+﻿body {
+    font-size: 36vh;
+    overflow: hidden;
+}
+
+* {
+    vertical-align: top;
+    cursor: none;
+}
+
+#board {
+    background-image: url('../IMG/DASK BG.jpg');
+    background-repeat: no-repeat;
+    background-size: 99vw 99vh;
+    /*text-align: center;*/
+    background-color: #e2b6b6;
+    display: inline-block;
+    width: 99vw;
+    height: 99vh;
+    margin: unset;
+}
+
+#myMark {
+    width: 10vw;
+    position: absolute;
+    z-index: 1;
+    top:14vh;
+   right:1vw;
+    color: yellow;
+    font-size:11vh;
+    text-shadow: 0 0 5px red, 0 0 5px red;
+    font-family: Agency FB;
+    display:none;
+}
+
+#mouseDiv {
+    width: 4vw;
+    height: 26vh;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: 4vw 26vh;
+    z-index: 2;
+    display:none;
+}
+
+.moveFruit {
+    width: 6vw;
+    height: 14vh;
+    background-size: 6vw 14vh;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+.bombs {
+    width: 1.5vw;
+    height: 3vh;
+    text-align: left !important;
+    margin-right: 3vw;
+    display: inline-block;
+    /*background-image: url('../IMG/fruits/bomb_PNG28.png');
+    background-size: 1.5vw 3vh;
+    text-shadow: 0 0 5px #d31fd8, 0 0 5px #d31fd8;
+    background-repeat: no-repeat;*/
+}
+
+#tostart {
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    background-image: url('../IMG/Fruit_Ninja_Wood_חתוך.jpg');
+  
+}
+
+#to_sakinim {
+    width: 10vw;
+    position: absolute;
+    z-index: 1;
+    bottom: 5vh;
+    right: 3vw;
+    cursor: pointer;
+    display: none;
+}
+
+#myClock {
+    width: 10vw;
+    position: absolute;
+    z-index: 1;
+    top: 5vh;
+    right: 1vw;
+    color: yellow;
+    font-size: 7vh;
+    text-shadow: 0 0 5px red, 0 0 5px red;
+   font-family: Agency FB;
+   display:none;
+}
+
+.after_cut {
+    position: absolute;
+    width: 7vw;
+    height: 14vh;
+    z-index: 2;
+    display: block;
+    animation-duration: 0.8s;
+    animation-fill-mode: backwards;
+    animation-timing-function: linear;
+    animation-iteration-count: 3;
+    animation-name: after_cut_big;
+}
+
+@keyframes after_cut_big {
+    0% {
+        width: 7vw;
+        height: 14vh;
+    }
+
+    50% {
+        width: 9vw;
+        height: 18vh;
+    }
+
+    100% {
+        width: 7vw;
+        height: 14vh;
+    }
+}

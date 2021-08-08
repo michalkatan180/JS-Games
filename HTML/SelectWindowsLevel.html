@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>בחירת רמת חלונות</title>
+    <link href="../CSS/Windows.css" rel="stylesheet" />
+</head>
+<body>
+    <center>
+        <div id="B">
+            <button class="Btn" onclick="l1()">level 1</button>
+            <button class="Btn" onclick="l2()">level 2</button>
+            <button class="Btn" onclick="l3()">level 3</button>
+        </div>
+    </center>
+    <div class="return">
+        <a href="SelectGame.html">חזרה לבחירת משחק</a>
+    </div>
+
+    <script>
+        function l1() {
+            localStorage.setItem("level", 4);
+            window.location = "Windows.html";
+        } function l2() {
+            localStorage.setItem("level", 5);
+            window.location = "Windows.html";
+        } function l3() {
+            localStorage.setItem("level", 6);
+            window.location = "Windows.html";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+﻿* {
+    vertical-align: top;
+    overflow: hidden;
+}
+
+#profesor {
+    background-image: url('../IMG/homeIMG/לוגו חתוך.jpg');
+    width: 42vw;
+    height: 30vh;
+    background-repeat: no-repeat;
+    background-size: 42vw;
+    display: block;
+    margin-top: 13vh;
+}
+
+#s1, #s2 {
+    width: 26vw;
+    height: 26vh;
+    top: 52vh;
+    position:absolute;
+    display: inline-block;
+    cursor: pointer;
+    box-shadow: inset 3px 3px 3px 3px #062170;
+    border-radius: 5%;
+    background-repeat: no-repeat;
+    background-size: 26vw 26vh;
+}
+#s1 {
+    background-image: url('../IMG/homeIMG/about.jpg');
+    right: 22vw;
+}
+
+#s2 {
+    background-image: url('../IMG/homeIMG/לבחירת משחק.jpg');
+    left: 22vw;
+}
+    #s1:hover, #s2:hover {
+        background-size: 28vw 28vh;
+}

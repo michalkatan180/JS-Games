@@ -1,0 +1,129 @@
+﻿body {
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    overflow: hidden;
+    background-image: url('../IMG/בניינים.jpg');
+}
+* {
+    vertical-align: top;
+    overflow:hidden;
+}
+div {
+    display: inline-block;
+}
+.w {
+    width: 2vw;
+    height: 4vh;
+    background-color: #6d6d6d;
+    opacity: 0.6;
+    display: inline-block;
+    border: solid;
+    border-color: black;
+    border-radius: 3px;
+    margin: 0.3vw;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    box-shadow: 0 0 2px yellow, 0 0 2px yellow;
+}
+#binyan {
+    margin-top:4vh;
+    width: 26vw;
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: 26vw 80vh;
+    padding-top:12vh;
+    padding-right: 2vw;
+    display: inline-block;
+    background-image: url('../IMG/בנין בלי רקע.gif');
+}
+#myMark {
+    width: 12vw;
+    height: 15vh;
+    font-size: 12vh;
+    color: white;
+    margin: 3vh;
+    text-align:center;
+    display: block;
+    text-shadow: 0 0 8px yellow, 0 0 8px yellow;
+    box-shadow: 0 0 8px yellow, 0 0 8px yellow;
+}
+#togo {
+    background-color:yellow;
+    width:1vw;
+    height:2vh;
+    position: absolute;
+   top:97vh;
+    animation-name: togo;
+    animation-duration: 102s;    
+    animation-timing-function: linear;
+}
+@keyframes togo {
+    0% {
+        right: 0vw;
+        width: 1vw;
+    }
+
+    89.9% {background-color:yellow;
+    }
+   90% {
+        background-color: red;
+    }
+
+    99% {
+        width: 99vw;
+        right: 0vw;
+        background-color: red;
+    }
+}
+#vx {
+    display: block;
+    height: 14vh;
+    width: 7vw;
+    background-repeat: no-repeat;
+    background-size: 6vw ;
+    margin: auto;
+    visibility: hidden;
+    position: absolute;
+    padding: 0px 0px 0px 0px;
+    z-index: 2;
+    bottom:10vh;
+    right:48vw;
+}
+.Btn {
+    width: 20vw;
+    height: 7vh;
+    background-color: #f5a516;
+    box-shadow: inset 0px 11px 20px 0px #f5a516;
+    border-radius: 3vh;
+    color: white;
+    font-family: Britannic Bold;
+         font-size: 5vh;
+    display: block;
+    margin-bottom: 3vh;
+    cursor: pointer;
+    stop-color: aqua;
+    opacity: 1;
+}
+
+    .Btn:hover {
+        background-color: white;
+        color: #f5a516;
+    }
+
+#B {
+    margin-top:18vh;
+}
+
+.return {
+    width: 7vw;
+    height: 10vh;
+    background-image: url('../IMG/סימנים/לדף הבית.jpg');
+    background-repeat: no-repeat;
+    background-size: 7vw;
+    position: absolute;
+    z-index: 2;
+    right: 5vw;
+    bottom: 6vh;
+    cursor: pointer;
+    opacity: 0.7;
+}

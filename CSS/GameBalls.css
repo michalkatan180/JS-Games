@@ -1,0 +1,96 @@
+﻿body {
+    font-size: 36vh;
+    overflow: hidden;
+}
+
+* {
+    vertical-align: top;
+    cursor: none;
+}
+
+#board {
+    background-image: url('../IMG/school/Evaporate_Painted Lines.png');
+    background-repeat: no-repeat;
+    background-size: 99vw 99vh;
+    display: inline-block;
+    width: 99vw;
+    height: 99vh;
+    margin: unset;
+}
+
+#myMark {
+    width: 12vw;
+    height: 15vh;
+    font-size: 12vh;
+    color: white;
+    top: 3vh;
+    left: 1vw;
+    text-align: center;
+    display: block;
+    text-shadow: 0 0 8px red, 0 0 8px red;
+    position: absolute;
+    z-index: 1;
+    font-family: Fb Alaska;
+}
+
+#mouseDiv {
+    width: 10vw;
+    height: 5vh;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 0 8px red, 0 0 8px red;
+    top: 94vh;
+    z-index: 10;
+}
+
+.moveFruit {
+    width: 6vw;
+    height: 14vh;
+    background-size: 6vw 14vh;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+.bombs {
+    width: 1.5vw;
+    height: 3vh;
+    text-align: left !important;
+    margin-right: 3vw;
+    display: inline-block;
+    /*background-image: url('../IMG/fruits/bomb_PNG28.png');
+    background-size: 1.5vw 3vh;
+    text-shadow: 0 0 5px #d31fd8, 0 0 5px #d31fd8;
+    background-repeat: no-repeat;*/
+}
+
+#togo {
+    background-color: white;
+    box-shadow: 0 0 8px red, 0 0 8px red;
+    right:1vw;
+    width:1.7vw;
+    height: 1vh;
+    bottom:0vh;
+    position: absolute;
+    animation-name: togo;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+}
+
+@keyframes togo {
+    0% {
+        height: 1vh;
+    }
+
+    91.9% {
+        background-color: white;
+    }
+
+    92% {
+        background-color: red;
+    }
+
+    99% {
+        height: 100vh;
+        background-color: red;
+    }
+}

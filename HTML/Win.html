@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>נצחון</title>
+    <link href="../CSS/Win.css" rel="stylesheet" />
+</head>
+<body>
+    <center>
+       
+        <div id="myMark">0</div>
+        <img src="../IMG/good.jpg" style="width:70vw;height:70vh" />
+    </center>
+    <a class="exit" href="HomePage.html">exit</a>
+    <script>
+        document.getElementById("myMark").innerHTML = "";
+        document.getElementById("myMark").innerHTML = localStorage.getItem("mark");
+        document.getElementById("myMark").style.fontSize = "36vh";
+        document.getElementById("myMark").style.right = "43vw";
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+﻿body {
+}
+
+* {
+    vertical-align: top;
+    overflow: hidden;
+}
+
+img {
+    width: 99vw;
+    height: 99vh;
+}
+
+#myMark {
+    font-size: 50vh;
+    color: black;
+    text-shadow: 0 0 10px red, 0 0 10px red;
+    position: absolute;
+    z-index: 3;
+    bottom: 7vh;
+    right: 22vw;
+    font-family: Fb Alaska;
+    width: 26vw;
+    position: absolute;
+    right: 36vw;
+    bottom: 26vh;
+}
+
+.again, .exit {
+    width: 7vw;
+    height: 4vh;
+    background-color: white;
+    position: absolute;
+    z-index: 2;
+    bottom: 6vh;
+    cursor: pointer;
+    background-color: #000000;
+    border-radius: 3vh;
+    color: white;
+    font-family: Fb Alaska;
+    font-size: 3vh;
+    stop-color: aqua;
+    text-align: center;
+}
+
+.again {
+    right: 20vw;
+}
+
+.exit {
+    left: 20vw;
+
+}

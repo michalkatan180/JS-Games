@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>אודות</title>
+    <link href="../CSS/About.css" rel="stylesheet" />
+
+</head>
+<body dir="rtl">
+    <div id="white_under"></div>
+    <div id="pratim">
+        <p style="font-size:2.5vh">
+            בס"ד<br />
+            בריין צ'מפיון הוא אתר למשחקי אימון המוח<br />
+            שכולל תרגולים שבודקים 4  אזורים של חישוב מנטלי:<br />
+            חזותי, זיכרון, חישוב ולוגיקה.<br />
+            כל תרגול מגדיל את היכולת של כל אחד מחלקי המוח<br />
+            (יכולות חזותיות, זיכרון, יכולות חישוביות ולוגיקה).<br />
+            בהצלחה!
+        </p> <p id="daregOtanu">דרג אותנו!</p>
+        <label>שם:</label>
+        <input type="text"/> <br />
+        <label>מייל:</label>
+        <input type="email" /><br /><br />
+        <div id="stars">
+            <img class="star" id="s1" onmouseover="y1()" src="../IMG/סימנים/כוכב ריק.gif" />
+            <img class="star" id="s2" onmouseover="y2()" src="../IMG/סימנים/כוכב ריק.gif" />
+            <img class="star" id="s3" onmouseover="y3()" src="../IMG/סימנים/כוכב ריק.gif" />
+            <img class="star" id="s4" onmouseover="y4()" src="../IMG/סימנים/כוכב ריק.gif" />
+            <img class="star" id="s5" onmouseover="y5()" src="../IMG/סימנים/כוכב ריק.gif" />
+            <button id="clear" onclick="c()">נקה</button>
+        </div>
+        <br />
+        <input id="shlach" type="submit"  onclick="go()" />
+    </div>
+    <div id="end_about">
+        <p class="goodLuck">פרטיך התקבלו במערכת<br />תודה!</p>
+    </div>
+    <a class="return" href="HomePage.html"></a>
+    <script>
+
+        function c() {
+            document.getElementById("s1").src = "../IMG/סימנים/כוכב ריק.gif";
+            document.getElementById("s2").src = "../IMG/סימנים/כוכב ריק.gif";
+            document.getElementById("s3").src = "../IMG/סימנים/כוכב ריק.gif";
+            document.getElementById("s4").src = "../IMG/סימנים/כוכב ריק.gif";
+            document.getElementById("s5").src = "../IMG/סימנים/כוכב ריק.gif";
+        }
+        function y1() {
+            document.getElementById("s1").src = "../IMG/סימנים/כוכב צהוב.gif";
+            document.getElementById("s1").setAttribute("yellow", "yes");
+            document.getElementById("s2").src = "../IMG/סימנים/כוכב ריק.gif";
+            document.getElementById("s2").setAttribute("yellow", "no");
+            document.getElementById("s3").src = "../IMG/סימנים/כוכב ריק.gif";
+            document.getElementById("s3").setAttribute("yellow", "no");
+            document.getElementById("s4").src = "../IMG/סימנים/כוכב ריק.gif";
+            document.getElementById("s4").setAttribute("yellow", "no`");
+            document.getElementById("s5").src = "../IMG/סימנים/כוכב ריק.gif";
+            document.getElementById("s1").setAttribute("yellow", "no");
+        }
+        function y2() {
+            document.getElementById("s1").setAttribute("yellow", "yes");
+            document.getElementById("s2").setAttribute("yellow", "yes");
+            document.getElementById("s3").setAttribute("yellow", "no");
+            document.getElementById("s4").setAttribute("yellow", "no");
+            document.getElementById("s5").setAttribute("yellow", "no");
+            document.getElementById("s1").src = "../IMG/סימנים/כוכב צהוב.gif";
+            document.getElementById("s2").src = "../IMG/סימנים/כוכב צהוב.gif";
+            document.getElementById("s3").src = "../IMG/סימנים/כוכב ריק.gif";
+            document.getElementById("s4").src = "../IMG/סימנים/כוכב ריק.gif";
+            document.getElementById("s5").src = "../IMG/סימנים/כוכב ריק.gif";
+
+        }
+        function y3() {
+            document.getElementById("s1").setAttribute("yellow", "yes");
+            document.getElementById("s2").setAttribute("yellow", "yes");
+            document.getElementById("s3").setAttribute("yellow", "yes");
+            document.getElementById("s4").setAttribute("yellow", "no");
+            document.getElementById("s5").setAttribute("yellow", "no");
+            document.getElementById("s1").src = "../IMG/סימנים/כוכב צהוב.gif";
+            document.getElementById("s2").src = "../IMG/סימנים/כוכב צהוב.gif";
+            document.getElementById("s3").src = "../IMG/סימנים/כוכב צהוב.gif";
+            document.getElementById("s4").src = "../IMG/סימנים/כוכב ריק.gif";
+            document.getElementById("s5").src = "../IMG/סימנים/כוכב ריק.gif";
+        }
+        function y4() {
+            document.getElementById("s1").setAttribute("yellow", "yes");
+            document.getElementById("s2").setAttribute("yellow", "yes");
+            document.getElementById("s3").setAttribute("yellow", "yes");
+            document.getElementById("s4").setAttribute("yellow", "yes");
+            document.getElementById("s5").setAttribute("yellow", "no");
+            document.getElementById("s1").src = "../IMG/סימנים/כוכב צהוב.gif";
+            document.getElementById("s2").src = "../IMG/סימנים/כוכב צהוב.gif";
+            document.getElementById("s3").src = "../IMG/סימנים/כוכב צהוב.gif";
+            document.getElementById("s4").src = "../IMG/סימנים/כוכב צהוב.gif";
+            document.getElementById("s5").src = "../IMG/סימנים/כוכב ריק.gif";
+        }
+        function y5() {
+            document.getElementById("s1").setAttribute("yellow", "yes");
+            document.getElementById("s2").setAttribute("yellow", "yes");
+            document.getElementById("s3").setAttribute("yellow", "yes");
+            document.getElementById("s4").setAttribute("yellow", "yes");
+            document.getElementById("s5").setAttribute("yellow", "yes");
+            document.getElementById("s1").src = "../IMG/סימנים/כוכב צהוב.gif";
+            document.getElementById("s2").src = "../IMG/סימנים/כוכב צהוב.gif";
+            document.getElementById("s3").src = "../IMG/סימנים/כוכב צהוב.gif";
+            document.getElementById("s4").src = "../IMG/סימנים/כוכב צהוב.gif";
+            document.getElementById("s5").src = "../IMG/סימנים/כוכב צהוב.gif";
+        }
+        function go() {
+            var r = document.getElementsByTagName("input");
+            if (r[0].value != "" && r[1].value != "" ) {
+                var m = 1;
+                while (m < 6) {
+                    document.getElementById("s" + m).classList.add("move");
+                    document.getElementById("s" + m).onmouseover = null;
+                    m++;
+                }
+                setTimeout(function () { window.location = "HomePage.html"; }, 4000);
+                setTimeout(function () { document.getElementById("end_about").style.display = "block"; }, 1200);
+            }
+        }
+
+    </script>
+</body>
+</html>
